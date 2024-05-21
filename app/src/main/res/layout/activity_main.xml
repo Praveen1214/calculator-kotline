@@ -20,11 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/edtNumber1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/edt_Number1"
         android:textSize="24sp"
@@ -42,64 +42,68 @@
         android:text="@string/label_Number2"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNumber1" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnplus"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="180dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="@color/btnPlus"
+        android:onClick="buttonClick"
         android:text="@string/btn_Plus"
         android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/btnsubtraction"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNumber2" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnsubtraction"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="180dp"
-        android:layout_height="100dp"
-        app:backgroundTint="@color/btnMinus"
+        android:layout_height="150dp"
+        android:onClick="buttonClick"
         android:text="@string/btn_Minus"
         android:textSize="34sp"
+        app:backgroundTint="@color/btnMinus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintStart_toEndOf="@+id/btnplus"
+        app:layout_constraintTop_toTopOf="@+id/btnplus" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnmultiply"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="180dp"
-        android:layout_height="100dp"
-        app:backgroundTint="@color/btnMultiply"
+        android:layout_height="150dp"
+        android:onClick="buttonClick"
         android:text="@string/btn_Multiply"
         android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:backgroundTint="@color/btnMultiply"
+        app:layout_constraintEnd_toStartOf="@+id/btndivide"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button8" />
+        app:layout_constraintTop_toTopOf="@+id/btndivide" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btndivide"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="180dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginTop="40dp"
-        app:backgroundTint="@color/btnDivide"
+        android:onClick="buttonClick4"
         android:text="@string/btn_Divide"
         android:textSize="34sp"
+        app:backgroundTint="@color/btnDivide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintStart_toEndOf="@+id/btnmultiply"
+        app:layout_constraintTop_toBottomOf="@+id/btnsubtraction" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
+        android:id="@+id/edtNumber2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
